@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Composite.BE\Composite.BE.csproj" />
+    <ProjectReference Include="..\Composite.DAL\Composite.DAL.csproj" />
+    <ProjectReference Include="..\Composite.Services\Composite.Services.csproj" />
+  </ItemGroup>
+
+</Project>
