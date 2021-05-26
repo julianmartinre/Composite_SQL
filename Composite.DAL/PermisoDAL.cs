@@ -6,12 +6,11 @@ using System.Text;
 
 namespace Composite.DAL
 {
-    public class PermisoDAL
+    public class PermisoDAL : Connection
     {
-        string cs = @"Data Source=DESKTOP-A33HBAH\SQLEXPRESS19;Initial Catalog=Composite;Integrated Security=True";
         public List<PermisoBaseBE> cargarPermisosUsuario(string username)
         {
-            SqlConnection connection = new SqlConnection(cs);
+            SqlConnection connection = new SqlConnection(ConnectionString());
             List<PermisoBaseBE> listaDePermisos = new List<PermisoBaseBE>();
             try
             {
@@ -54,7 +53,7 @@ namespace Composite.DAL
 
         public List<PermisoBaseBE> obtenerHijos(int idPermiso)
         {
-            SqlConnection connection = new SqlConnection(cs);
+            SqlConnection connection = new SqlConnection(ConnectionString());
             List<PermisoBaseBE> listaDePermisos = new List<PermisoBaseBE>();
             try
             {
