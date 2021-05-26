@@ -29,13 +29,22 @@ namespace Composite
         /// </summary>
         private void InitializeComponent()
         {
+            this.treePermisos = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
+            // 
+            // treePermisos
+            // 
+            this.treePermisos.Location = new System.Drawing.Point(12, 12);
+            this.treePermisos.Name = "treePermisos";
+            this.treePermisos.Size = new System.Drawing.Size(265, 521);
+            this.treePermisos.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(822, 507);
+            this.ClientSize = new System.Drawing.Size(295, 545);
+            this.Controls.Add(this.treePermisos);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -44,6 +53,8 @@ namespace Composite
         }
 
         #endregion
+
+        private System.Windows.Forms.TreeView treePermisos;
     }
 }
 
